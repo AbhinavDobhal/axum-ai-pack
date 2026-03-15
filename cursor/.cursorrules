@@ -1,0 +1,9 @@
+# Axium Cursor Rules
+
+- Source of truth: .github/copilot-instructions.md
+- Keep routes in src/routes, handlers in src/handlers, models in src/models, SQL in src/database.
+- Use AuthenticatedRouteBuilder for protected routes.
+- Preserve RBAC vectors, validator-based validation, and utoipa annotations.
+- Keep changes small and idiomatic to the existing Rust codebase.
+- Commands: make app, make app-build, make migrate, cargo test, cargo clippy, cargo fmt.
+- Pitfalls: SQLx macros need schema metadata; missing env vars can panic.

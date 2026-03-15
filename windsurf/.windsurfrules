@@ -1,0 +1,9 @@
+# Axium Windsurf Rules
+
+- Canonical source: .github/copilot-instructions.md
+- Preserve the layered Rust backend architecture and AppState dependency pattern.
+- Put SQL only in src/database.
+- Use AuthenticatedRouteBuilder for authenticated routes.
+- Preserve RBAC vectors, OpenAPI annotations, and JSON error shape.
+- Commands: make app, make app-build, make migrate, make docker-up, cargo test, cargo clippy, cargo fmt.
+- Pitfalls: SQLx metadata requirements and required environment variables.
